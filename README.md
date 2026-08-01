@@ -69,6 +69,10 @@ ExpenseFlow-PWA
 ├── service-worker.js
 └── ExpenseServlet.java
 
+## 📸 Application Preview
+
+![ExpenseFlow Dashboard](dashboard.png)
+
 ## 👨‍💻 Author
 
 **Karan**
