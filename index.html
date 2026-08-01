@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>ExpenseFlow</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#e50914">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<script src="./libs/chart.js"></script>
+</head>
+
+<body>
+
+<div id="splash">
+  <h1>ExpenseFlow</h1>
+</div>
+
+<div class="container">
+
+  <div class="header">
+    <h1>ExpenseFlow</h1>
+  </div>
+
+  <div class="top">
+
+    <div class="card">
+      <input id="name" placeholder="Expense Name">
+      <input id="price" type="number" placeholder="₹ Amount">
+      <input id="date" type="date">
+      <button onclick="saveSub()">Save</button>
+    </div>
+
+    <div class="chartBox">
+      <canvas id="chart"></canvas>
+    </div>
+
+  </div>
+
+  <div class="summary-grid">
+
+    <div class="summary-card">
+      <h3>Total (All Time)</h3>
+      <h2>₹<span id="total">0</span></h2>
+    </div>
+
+    <div class="summary-card highlight">
+      <h3>This Month</h3>
+      <h2>₹<span id="monthTotal">0</span></h2>
+    </div>
+
+    <div class="summary-card">
+      <h3>This Year</h3>
+      <h2>₹<span id="yearTotal">0</span></h2>
+    </div>
+
+  </div>
+
+  <h2 class="section-title">Monthly Breakdown</h2>
+  <div id="monthlyList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js");
+  });
+}
+</script>
+
+</body>
+</html>
