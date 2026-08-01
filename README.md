@@ -44,7 +44,7 @@ It allows users to record expenses, visualize spending through interactive chart
 git clone https://github.com/Karan-21-2004/ExpenseFlow-PWA.git
 ```
 
-2. Import into Eclipse.
+2. Import into VS Code.
 
 3. Configure Apache Tomcat.
 
@@ -53,21 +53,6 @@ git clone https://github.com/Karan-21-2004/ExpenseFlow-PWA.git
 5. Update the JDBC username and password.
 
 6. Run on Tomcat.
-
-
-## 📂 Project Structure
-
-ExpenseFlow-PWA
-│
-├── WEB-INF
-├── database
-├── libs
-├── index.html
-├── style.css
-├── script.js
-├── manifest.json
-├── service-worker.js
-└── ExpenseServlet.java
 
 ## 📸 Application Preview
 
