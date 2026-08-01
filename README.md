@@ -71,7 +71,7 @@ ExpenseFlow-PWA
 
 ## 📸 Application Preview
 
-![ExpenseFlow Dashboard](dashboard.png)
+![ExpenseFlow Dashboard](dashboard.png.png)
 
 ## 👨‍💻 Author
 
